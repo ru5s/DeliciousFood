@@ -7,15 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B55505172A51B1B800A372D9 /* Resurses.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55505162A51B1B800A372D9 /* Resurses.swift */; };
+		B555051F2A51B33000A372D9 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B555051D2A51B33000A372D9 /* SF-Pro-Display-Medium.otf */; };
+		B55505242A51B8B400A372D9 /* CategoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55505232A51B8B400A372D9 /* CategoryPage.swift */; };
 		B55740232A5002CD00DDC198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740222A5002CD00DDC198 /* AppDelegate.swift */; };
 		B55740252A5002CD00DDC198 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740242A5002CD00DDC198 /* SceneDelegate.swift */; };
 		B55740272A5002CD00DDC198 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740262A5002CD00DDC198 /* ViewController.swift */; };
 		B557402A2A5002CD00DDC198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55740282A5002CD00DDC198 /* Main.storyboard */; };
 		B557402C2A5002CF00DDC198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B557402B2A5002CF00DDC198 /* Assets.xcassets */; };
 		B557402F2A5002CF00DDC198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B557402D2A5002CF00DDC198 /* LaunchScreen.storyboard */; };
+		B55740382A50052700DDC198 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740372A50052700DDC198 /* Coordinator.swift */; };
+		B557403A2A50056800DDC198 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740392A50056800DDC198 /* ApplicationCoordinator.swift */; };
+		B557403D2A5006CB00DDC198 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557403C2A5006CB00DDC198 /* MainCoordinator.swift */; };
+		B55740402A5014BA00DDC198 /* HomeTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557403F2A5014BA00DDC198 /* HomeTabCoordinator.swift */; };
+		B55740422A501B7A00DDC198 /* HomeSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740412A501B7A00DDC198 /* HomeSwiftUIView.swift */; };
+		B55740442A501B9B00DDC198 /* HomeSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740432A501B9B00DDC198 /* HomeSwiftUIViewModel.swift */; };
+		B55740472A5022B000DDC198 /* SearchTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740462A5022B000DDC198 /* SearchTabCoordinator.swift */; };
+		B55740492A5022C500DDC198 /* SearchTabSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740482A5022C500DDC198 /* SearchTabSwiftUIView.swift */; };
+		B557404B2A5022D100DDC198 /* SearchTabSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557404A2A5022D100DDC198 /* SearchTabSwiftUIViewModel.swift */; };
+		B557404E2A50250200DDC198 /* ShoppingTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557404D2A50250200DDC198 /* ShoppingTabCoordinator.swift */; };
+		B55740502A50253D00DDC198 /* ShoppingTabSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557404F2A50253D00DDC198 /* ShoppingTabSwiftUIView.swift */; };
+		B55740522A50254C00DDC198 /* ShoppingTabSwiftUIViewMidel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740512A50254C00DDC198 /* ShoppingTabSwiftUIViewMidel.swift */; };
+		B55740552A5026E500DDC198 /* AccauntTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740542A5026E500DDC198 /* AccauntTabCoordinator.swift */; };
+		B55740572A50272D00DDC198 /* AccauntTabSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740562A50272D00DDC198 /* AccauntTabSwiftUIView.swift */; };
+		B55740592A50273E00DDC198 /* AccauntTabSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740582A50273E00DDC198 /* AccauntTabSwiftUIViewModel.swift */; };
+		B557405B2A5032F500DDC198 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557405A2A5032F500DDC198 /* CustomNavigationBar.swift */; };
+		B557405E2A51688F00DDC198 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557405D2A51688F00DDC198 /* NetworkService.swift */; };
+		B55740612A516BEE00DDC198 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740602A516BEE00DDC198 /* Home.swift */; };
+		B55740632A516D3E00DDC198 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740622A516D3E00DDC198 /* Category.swift */; };
+		B57F14432A51A2200071FDEB /* ImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F14422A51A2200071FDEB /* ImageUrl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B55505162A51B1B800A372D9 /* Resurses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resurses.swift; sourceTree = "<group>"; };
+		B555051D2A51B33000A372D9 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		B55505232A51B8B400A372D9 /* CategoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPage.swift; sourceTree = "<group>"; };
 		B557401F2A5002CD00DDC198 /* DeliciousFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliciousFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55740222A5002CD00DDC198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B55740242A5002CD00DDC198 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +50,26 @@
 		B557402B2A5002CF00DDC198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B557402E2A5002CF00DDC198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B55740302A5002CF00DDC198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B55740372A50052700DDC198 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B55740392A50056800DDC198 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		B557403C2A5006CB00DDC198 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		B557403F2A5014BA00DDC198 /* HomeTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabCoordinator.swift; sourceTree = "<group>"; };
+		B55740412A501B7A00DDC198 /* HomeSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSwiftUIView.swift; sourceTree = "<group>"; };
+		B55740432A501B9B00DDC198 /* HomeSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSwiftUIViewModel.swift; sourceTree = "<group>"; };
+		B55740462A5022B000DDC198 /* SearchTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabCoordinator.swift; sourceTree = "<group>"; };
+		B55740482A5022C500DDC198 /* SearchTabSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabSwiftUIView.swift; sourceTree = "<group>"; };
+		B557404A2A5022D100DDC198 /* SearchTabSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabSwiftUIViewModel.swift; sourceTree = "<group>"; };
+		B557404D2A50250200DDC198 /* ShoppingTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTabCoordinator.swift; sourceTree = "<group>"; };
+		B557404F2A50253D00DDC198 /* ShoppingTabSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTabSwiftUIView.swift; sourceTree = "<group>"; };
+		B55740512A50254C00DDC198 /* ShoppingTabSwiftUIViewMidel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTabSwiftUIViewMidel.swift; sourceTree = "<group>"; };
+		B55740542A5026E500DDC198 /* AccauntTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccauntTabCoordinator.swift; sourceTree = "<group>"; };
+		B55740562A50272D00DDC198 /* AccauntTabSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccauntTabSwiftUIView.swift; sourceTree = "<group>"; };
+		B55740582A50273E00DDC198 /* AccauntTabSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccauntTabSwiftUIViewModel.swift; sourceTree = "<group>"; };
+		B557405A2A5032F500DDC198 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		B557405D2A51688F00DDC198 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B55740602A516BEE00DDC198 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B55740622A516D3E00DDC198 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		B57F14422A51A2200071FDEB /* ImageUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +83,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B55505142A51B00500A372D9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B555051D2A51B33000A372D9 /* SF-Pro-Display-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B55505152A51B0B900A372D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B55505142A51B00500A372D9 /* Fonts */,
+				B55505162A51B1B800A372D9 /* Resurses.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B55505222A51B89100A372D9 /* Category page */ = {
+			isa = PBXGroup;
+			children = (
+				B55505232A51B8B400A372D9 /* CategoryPage.swift */,
+			);
+			path = "Category page";
+			sourceTree = "<group>";
+		};
 		B55740162A5002CD00DDC198 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +127,12 @@
 		B55740212A5002CD00DDC198 /* DeliciousFood */ = {
 			isa = PBXGroup;
 			children = (
+				B55505152A51B0B900A372D9 /* Resources */,
+				B57F14412A51A1E10071FDEB /* Extension */,
+				B557405C2A51687000DDC198 /* Services */,
+				B55740392A50056800DDC198 /* ApplicationCoordinator.swift */,
+				B557403B2A50061500DDC198 /* Main */,
+				B55740362A50051300DDC198 /* Protocols */,
 				B55740222A5002CD00DDC198 /* AppDelegate.swift */,
 				B55740242A5002CD00DDC198 /* SceneDelegate.swift */,
 				B55740262A5002CD00DDC198 /* ViewController.swift */,
@@ -65,6 +142,94 @@
 				B55740302A5002CF00DDC198 /* Info.plist */,
 			);
 			path = DeliciousFood;
+			sourceTree = "<group>";
+		};
+		B55740362A50051300DDC198 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B55740372A50052700DDC198 /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B557403B2A50061500DDC198 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B557403C2A5006CB00DDC198 /* MainCoordinator.swift */,
+				B557405A2A5032F500DDC198 /* CustomNavigationBar.swift */,
+				B557403E2A50148700DDC198 /* Home Tab */,
+				B55740452A50228900DDC198 /* Search Tab */,
+				B557404C2A50248000DDC198 /* Shopping Tab */,
+				B55740532A50267C00DDC198 /* Accaunt Tab */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B557403E2A50148700DDC198 /* Home Tab */ = {
+			isa = PBXGroup;
+			children = (
+				B55505222A51B89100A372D9 /* Category page */,
+				B557403F2A5014BA00DDC198 /* HomeTabCoordinator.swift */,
+				B55740412A501B7A00DDC198 /* HomeSwiftUIView.swift */,
+				B55740432A501B9B00DDC198 /* HomeSwiftUIViewModel.swift */,
+			);
+			path = "Home Tab";
+			sourceTree = "<group>";
+		};
+		B55740452A50228900DDC198 /* Search Tab */ = {
+			isa = PBXGroup;
+			children = (
+				B55740462A5022B000DDC198 /* SearchTabCoordinator.swift */,
+				B55740482A5022C500DDC198 /* SearchTabSwiftUIView.swift */,
+				B557404A2A5022D100DDC198 /* SearchTabSwiftUIViewModel.swift */,
+			);
+			path = "Search Tab";
+			sourceTree = "<group>";
+		};
+		B557404C2A50248000DDC198 /* Shopping Tab */ = {
+			isa = PBXGroup;
+			children = (
+				B557404D2A50250200DDC198 /* ShoppingTabCoordinator.swift */,
+				B557404F2A50253D00DDC198 /* ShoppingTabSwiftUIView.swift */,
+				B55740512A50254C00DDC198 /* ShoppingTabSwiftUIViewMidel.swift */,
+			);
+			path = "Shopping Tab";
+			sourceTree = "<group>";
+		};
+		B55740532A50267C00DDC198 /* Accaunt Tab */ = {
+			isa = PBXGroup;
+			children = (
+				B55740542A5026E500DDC198 /* AccauntTabCoordinator.swift */,
+				B55740562A50272D00DDC198 /* AccauntTabSwiftUIView.swift */,
+				B55740582A50273E00DDC198 /* AccauntTabSwiftUIViewModel.swift */,
+			);
+			path = "Accaunt Tab";
+			sourceTree = "<group>";
+		};
+		B557405C2A51687000DDC198 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B557405F2A516BE000DDC198 /* Entity */,
+				B557405D2A51688F00DDC198 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B557405F2A516BE000DDC198 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B55740602A516BEE00DDC198 /* Home.swift */,
+				B55740622A516D3E00DDC198 /* Category.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B57F14412A51A1E10071FDEB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B57F14422A51A2200071FDEB /* ImageUrl.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +293,7 @@
 				B557402F2A5002CF00DDC198 /* LaunchScreen.storyboard in Resources */,
 				B557402C2A5002CF00DDC198 /* Assets.xcassets in Resources */,
 				B557402A2A5002CD00DDC198 /* Main.storyboard in Resources */,
+				B555051F2A51B33000A372D9 /* SF-Pro-Display-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +304,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55740552A5026E500DDC198 /* AccauntTabCoordinator.swift in Sources */,
+				B55740472A5022B000DDC198 /* SearchTabCoordinator.swift in Sources */,
+				B557403A2A50056800DDC198 /* ApplicationCoordinator.swift in Sources */,
+				B55740502A50253D00DDC198 /* ShoppingTabSwiftUIView.swift in Sources */,
+				B557403D2A5006CB00DDC198 /* MainCoordinator.swift in Sources */,
+				B55740572A50272D00DDC198 /* AccauntTabSwiftUIView.swift in Sources */,
+				B55740592A50273E00DDC198 /* AccauntTabSwiftUIViewModel.swift in Sources */,
+				B55740402A5014BA00DDC198 /* HomeTabCoordinator.swift in Sources */,
+				B557404E2A50250200DDC198 /* ShoppingTabCoordinator.swift in Sources */,
+				B55740422A501B7A00DDC198 /* HomeSwiftUIView.swift in Sources */,
+				B557405E2A51688F00DDC198 /* NetworkService.swift in Sources */,
+				B55740522A50254C00DDC198 /* ShoppingTabSwiftUIViewMidel.swift in Sources */,
+				B57F14432A51A2200071FDEB /* ImageUrl.swift in Sources */,
+				B55740382A50052700DDC198 /* Coordinator.swift in Sources */,
+				B55740612A516BEE00DDC198 /* Home.swift in Sources */,
 				B55740272A5002CD00DDC198 /* ViewController.swift in Sources */,
 				B55740232A5002CD00DDC198 /* AppDelegate.swift in Sources */,
 				B55740252A5002CD00DDC198 /* SceneDelegate.swift in Sources */,
+				B557405B2A5032F500DDC198 /* CustomNavigationBar.swift in Sources */,
+				B55740492A5022C500DDC198 /* SearchTabSwiftUIView.swift in Sources */,
+				B557404B2A5022D100DDC198 /* SearchTabSwiftUIViewModel.swift in Sources */,
+				B55505172A51B1B800A372D9 /* Resurses.swift in Sources */,
+				B55740442A501B9B00DDC198 /* HomeSwiftUIViewModel.swift in Sources */,
+				B55740632A516D3E00DDC198 /* Category.swift in Sources */,
+				B55505242A51B8B400A372D9 /* CategoryPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,9 +480,10 @@
 				INFOPLIST_FILE = DeliciousFood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +491,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = uz.IsmailovRuslan.DeliciousFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,9 +512,10 @@
 				INFOPLIST_FILE = DeliciousFood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +523,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = uz.IsmailovRuslan.DeliciousFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
