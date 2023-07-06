@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Category: Codable {
-    let dishes: [Dish]
+struct Category: Codable, Hashable {
+    var dishes: [Dish]
 }
 
-struct Dish: Codable, Identifiable {
+struct Dish: Codable, Identifiable, Hashable, Equatable {
     let id: Int
     let name: String
     let price, weight: Int

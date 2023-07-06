@@ -39,8 +39,8 @@ final class NetworkService {
             guard let unwrData = data,
                   (response as? HTTPURLResponse)?.statusCode == 200,
                   error == nil else {
-                print("nil")
-//                completition(error, nil)
+                
+                print("error http url response \(String(describing: error?.localizedDescription))")
                 return
             }
             
@@ -59,15 +59,10 @@ final class NetworkService {
                     
                     switch mode {
                     case .home:
-                        print("++ .home")
-                        
                         completition(result as? HomeList, nil, nil)
                     case .category:
-                        print("++ .category")
                         completition(nil, result as? Category, nil)
                     }
-                    print("++ .result")
-//                    print("++ \(result)")
                     
                 } else {
                     completition(nil, nil, error)

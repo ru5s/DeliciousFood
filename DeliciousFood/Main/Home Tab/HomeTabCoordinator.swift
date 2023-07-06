@@ -9,19 +9,42 @@ import UIKit
 import Combine
 import SwiftUI
 
-class HomeTabCoordinator: Coordinator {
+class HomeTabCoordinator: NSObject, Coordinator, ObservableObject, UINavigationControllerDelegate {
     
-    let rootViewController = UINavigationController()
+    var rootViewController = UINavigationController()
     
     let networkService = NetworkService()
     
     var homeTabModel = HomeSwiftUIViewModel()
     
+    
+    
+    override init() {
+        super.init()
+        rootViewController = UINavigationController()
+    }
+    
+    lazy var homeTab: HomeSwiftUIView = {
+        var vc = HomeSwiftUIView(model: self.homeTabModel)
+        vc.model = self.homeTabModel
+        return vc
+    }()
+    
     func start() {
+        
+        homeTab.model = homeTabModel
+        
         firstRequestApi()
+        
+        rootViewController.delegate = self
+        
+        let homeVC = UIHostingController(rootView: homeTab)
+        rootViewController.setViewControllers([homeVC], animated: false)
+
     }
     
     private func firstRequestApi() {
+        
         NetworkService.shared.request(mode: .home) {[weak self] homeList, category, error in
             guard let self = self else {return}
             if error != nil {
@@ -37,6 +60,14 @@ class HomeTabCoordinator: Coordinator {
                 }
             }
         }
+    }
+    
+    func goToCategoryPage(name: String) -> some View {
+        
+        let categoryPage = CategoryPage(categoryName: name, titleName: .constant(""))
+        
+        return categoryPage
+        
     }
     
 }

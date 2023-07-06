@@ -13,7 +13,9 @@ class ShoppingTabCoordinator: Coordinator {
     
     let rootViewController = UINavigationController()
     
+    var shoppingModel = ShoppingTabSwiftUIViewModel()
+    
     func start() {
-        
     }
+
 }

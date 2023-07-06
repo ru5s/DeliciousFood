@@ -28,12 +28,14 @@ struct CustomNavigationBar<Content: View>: View {
     }
     
     var body: some View {
+        
         ZStack {
             content()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .navigationTitle(!locations ? navigationTitle : "")
         .navigationBarTitleDisplayMode(.inline)
+        .background(.white)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 
@@ -47,28 +49,27 @@ struct CustomNavigationBar<Content: View>: View {
                     HStack(alignment: .top){
                         Image("location")
                             .padding(.top, 5)
+                            .foregroundColor(.accentColor)
                         
                         VStack(alignment: .leading) {
                             Text(locationsTitle)
                                 .font(Font.system(size: 18, weight: .medium))
                             Text(currentDate)
                                 .font(Font.system(size: 14))
-                                .foregroundColor(.black.opacity(0.5))
+                                .foregroundColor(.accentColor.opacity(0.5))
                         }
                     }
                 }
             }
         }
         
+        
     }
 }
 
 struct CustomNavigationBar_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            CustomNavigationBar(locations: false) {
-                
-            }
+            CustomNavigationBar(locations: true) {
         }
         
     }
