@@ -15,7 +15,6 @@
 		B55505292A51ED2600A372D9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B55505282A51ED2600A372D9 /* Kingfisher */; };
 		B55740232A5002CD00DDC198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740222A5002CD00DDC198 /* AppDelegate.swift */; };
 		B55740252A5002CD00DDC198 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740242A5002CD00DDC198 /* SceneDelegate.swift */; };
-		B55740272A5002CD00DDC198 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55740262A5002CD00DDC198 /* ViewController.swift */; };
 		B557402A2A5002CD00DDC198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55740282A5002CD00DDC198 /* Main.storyboard */; };
 		B557402C2A5002CF00DDC198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B557402B2A5002CF00DDC198 /* Assets.xcassets */; };
 		B557402F2A5002CF00DDC198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B557402D2A5002CF00DDC198 /* LaunchScreen.storyboard */; };
@@ -56,7 +55,6 @@
 		B557401F2A5002CD00DDC198 /* DeliciousFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliciousFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55740222A5002CD00DDC198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B55740242A5002CD00DDC198 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B55740262A5002CD00DDC198 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B55740292A5002CD00DDC198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B557402B2A5002CF00DDC198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B557402E2A5002CF00DDC198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				B55740362A50051300DDC198 /* Protocols */,
 				B55740222A5002CD00DDC198 /* AppDelegate.swift */,
 				B55740242A5002CD00DDC198 /* SceneDelegate.swift */,
-				B55740262A5002CD00DDC198 /* ViewController.swift */,
 				B55740282A5002CD00DDC198 /* Main.storyboard */,
 				B557402B2A5002CF00DDC198 /* Assets.xcassets */,
 				B557402D2A5002CF00DDC198 /* LaunchScreen.storyboard */,
@@ -389,7 +386,6 @@
 				B55740382A50052700DDC198 /* Coordinator.swift in Sources */,
 				B5B0103F2A55FAF800F42CFF /* CustomStepper.swift in Sources */,
 				B55740612A516BEE00DDC198 /* Home.swift in Sources */,
-				B55740272A5002CD00DDC198 /* ViewController.swift in Sources */,
 				B55505262A51BA6100A372D9 /* CategoryPageModel.swift in Sources */,
 				B55740232A5002CD00DDC198 /* AppDelegate.swift in Sources */,
 				B55740252A5002CD00DDC198 /* SceneDelegate.swift in Sources */,
