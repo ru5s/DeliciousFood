@@ -35,10 +35,6 @@ class ShoppingTabSwiftUIViewModel: ObservableObject {
         
     }
     
-//    func updateBasket(_ dishes: [Dish]) {
-//        self.dishes = dishes
-//    }
-    
     func calculateSum() -> String{
         var count: Int = 0
         

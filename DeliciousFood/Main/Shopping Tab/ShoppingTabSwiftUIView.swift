@@ -50,14 +50,15 @@ struct ShoppingTabSwiftUIView: View {
                 
                 
             }
+            .onAppear {
+                model.dataRecieceStoreRecieveValue()
+            }
+            .onDisappear {
+                model.dataStroreSharedValue()
+                model.dataCancellable()
+            }
         }
-        .onAppear {
-            model.dataRecieceStoreRecieveValue()
-        }
-        .onDisappear {
-            model.dataStroreSharedValue()
-            model.dataCancellable()
-        }
+        
     }
 }
 

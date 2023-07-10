@@ -21,7 +21,7 @@ class CategoryPageModel: ObservableObject, CategoryPageDelegate {
     
     var cancellables = Set<AnyCancellable>()
     
-    var receivedValue: [Dish] = []
+//    var receivedValue: [Dish] = []
     
     //get data from api
     func getCategoryDish() {
@@ -102,6 +102,7 @@ extension CategoryPageModel: CategoryPageFromDishDelegate {
         
         if let dish = likedDishes.firstIndex(where: {$0.id == dish.id}) {
             likedDishes.remove(at: dish)
+            
         } else {
             likedDishes.append(dish)
         }

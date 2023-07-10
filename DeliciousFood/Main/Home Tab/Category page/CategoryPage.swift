@@ -100,9 +100,12 @@ struct CategoryPage: View {
             
         }
         .onAppear {
-            model.dataStroreSharedValue()
+            
             model.dataRecieceStoreRecieveValue()
             model.getCategoryDish()
+        }
+        .onDisappear {
+            model.dataStroreSharedValue()
         }
     }
     
