@@ -44,6 +44,7 @@
 		B5B0103D2A55ED8F00F42CFF /* ShopingTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B0103C2A55ED8F00F42CFF /* ShopingTabCell.swift */; };
 		B5B0103F2A55FAF800F42CFF /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B0103E2A55FAF800F42CFF /* CustomStepper.swift */; };
 		B5B010422A560C2A00F42CFF /* CombineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B010412A560C2A00F42CFF /* CombineService.swift */; };
+		B5B010442A5BF64200F42CFF /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B010432A5BF64200F42CFF /* Combine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		B5B0103C2A55ED8F00F42CFF /* ShopingTabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopingTabCell.swift; sourceTree = "<group>"; };
 		B5B0103E2A55FAF800F42CFF /* CustomStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepper.swift; sourceTree = "<group>"; };
 		B5B010412A560C2A00F42CFF /* CombineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineService.swift; sourceTree = "<group>"; };
+		B5B010432A5BF64200F42CFF /* Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				B55740372A50052700DDC198 /* Coordinator.swift */,
+				B5B010432A5BF64200F42CFF /* Combine.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				B55740472A5022B000DDC198 /* SearchTabCoordinator.swift in Sources */,
 				B557403A2A50056800DDC198 /* ApplicationCoordinator.swift in Sources */,
 				B55740502A50253D00DDC198 /* ShoppingTabSwiftUIView.swift in Sources */,
+				B5B010442A5BF64200F42CFF /* Combine.swift in Sources */,
 				B557403D2A5006CB00DDC198 /* MainCoordinator.swift in Sources */,
 				B55740572A50272D00DDC198 /* AccauntTabSwiftUIView.swift in Sources */,
 				B55740592A50273E00DDC198 /* AccauntTabSwiftUIViewModel.swift in Sources */,

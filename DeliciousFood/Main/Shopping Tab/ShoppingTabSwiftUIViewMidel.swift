@@ -17,9 +17,11 @@ struct Calulate {
 
 class ShoppingTabSwiftUIViewModel: ObservableObject {
     
-    @Published var name: String = "Shopping"
+//    @Published var name: String = "Shopping"
     @Published var dishes: [Dish] = []
     @Published var dishesToCalculate: [Calulate] = []
+    
+    var cancellables = Set<AnyCancellable>()
     
     func checkDishInBasket(_ dish: [Dish]){
         
@@ -33,15 +35,15 @@ class ShoppingTabSwiftUIViewModel: ObservableObject {
         
     }
     
-    func updateBasket(_ dishes: [Dish]) {
-        self.dishes = dishes
-    }
+//    func updateBasket(_ dishes: [Dish]) {
+//        self.dishes = dishes
+//    }
     
     func calculateSum() -> String{
         var count: Int = 0
         
         for dish in dishesToCalculate {
-            var tempInt = dish.dish.price * dish.count
+            let tempInt = dish.dish.price * dish.count
             count += tempInt
             
         }
@@ -50,17 +52,34 @@ class ShoppingTabSwiftUIViewModel: ObservableObject {
     }
 }
 
-extension ShoppingTabSwiftUIViewModel: ShoppingTabDelegate {
-    func removeFromBasket(_ id: Int) {
+extension ShoppingTabSwiftUIViewModel: Combine {
+    
+    func dataStroreSharedValue() {
+        DataRecieceStore.shared.recieveValue.send(dishes)
+    }
+    
+    func dataRecieceStoreRecieveValue() {
+        DataStore.shared.value
+            .sink { value in
+                self.dishes = value
+                self.toCalculateArray(dishes: self.dishes, stepper: 1)
+            }
+            .store(in: &cancellables)
+    }
+    
+    func dataCancellable() {
+        cancellables.removeAll()
+    }
+    
+    
+}
 
+extension ShoppingTabSwiftUIViewModel: ShoppingTabDelegate {
+    
+    func removeFromBasket(_ id: Int) {
         if let dish = dishes.firstIndex(where: {$0.id == id}) {
             dishes.remove(at: dish)
         }
-
-    }
-    
-    func sendDishes() -> [Dish] {
-        return dishes
     }
     
     func toCalculate(dish: Dish, stepper: Int, remove: Bool) {

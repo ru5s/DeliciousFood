@@ -63,7 +63,7 @@ class HomeTabCoordinator: NSObject, Coordinator, ObservableObject, UINavigationC
     
     func goToCategoryPage(name: String) -> some View {
         
-        let categoryPage = CategoryPage(categoryName: name, titleName: .constant(""))
+        let categoryPage = CategoryPage(titleName: .constant(""))
         
         return categoryPage
         

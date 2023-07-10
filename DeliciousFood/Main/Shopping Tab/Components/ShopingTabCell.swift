@@ -11,9 +11,9 @@ import Kingfisher
 protocol ShoppingTabDelegate {
     func removeFromBasket(_ id: Int)
     
-    func sendDishes() -> [Dish]
-    
     func toCalculate(dish: Dish, stepper: Int, remove: Bool)
+    
+    func dataStroreSharedValue()
 }
 
 struct ShopingTabCell: View {
@@ -38,7 +38,6 @@ struct ShopingTabCell: View {
                 
                 Text(dish.name)
                     .font(Resurses.Fonts.sfProDisplay_Medium(with: 18).bold())
-                    
                 
                 HStack(alignment: .bottom) {
                     
@@ -61,7 +60,8 @@ struct ShopingTabCell: View {
                 
                 shopDelegate.toCalculate(dish: dish, stepper: stepper, remove: true)
                 shopDelegate.removeFromBasket(dish.id)
-                DataRecieceStore.shared.recieveValue.send(shopDelegate.sendDishes())
+                
+                shopDelegate.dataStroreSharedValue()
                 
             }, forSum: {
                 

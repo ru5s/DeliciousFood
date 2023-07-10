@@ -30,7 +30,7 @@ struct HomeSwiftUIView: View {
                                 let name = value.name
                                 
                                 NavigationLink(
-                                    destination: CategoryPage(categoryName: name, titleName: self.$titleName),
+                                    destination: CategoryPage(titleName: self.$titleName),
                                     isActive: $isActive,
                                     label: {})
                                 

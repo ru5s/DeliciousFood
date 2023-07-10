@@ -12,9 +12,6 @@ struct ShoppingTabSwiftUIView: View {
     
     @ObservedObject var model: ShoppingTabSwiftUIViewModel
     
-    @State private var receivedValue: [Dish] = []
-    @State private var cancellables = Set<AnyCancellable>()
-    
     var body: some View {
         
         NavigationView {
@@ -55,19 +52,11 @@ struct ShoppingTabSwiftUIView: View {
             }
         }
         .onAppear {
-            
-            DataStore.shared.value
-                .sink { value in
-                    self.receivedValue = value
-                    self.model.updateBasket(self.receivedValue)
-                    self.model.toCalculateArray(dishes: self.receivedValue, stepper: 1)
-                }
-                .store(in: &cancellables)
+            model.dataRecieceStoreRecieveValue()
         }
         .onDisappear {
-            DataRecieceStore.shared.recieveValue.send(model.sendDishes())
-            
-            cancellables.removeAll()
+            model.dataStroreSharedValue()
+            model.dataCancellable()
         }
     }
 }

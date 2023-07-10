@@ -7,28 +7,18 @@
 
 import SwiftUI
 import Kingfisher
-import Combine
 
 struct CategoryPage: View {
     
     @ObservedObject var model: CategoryPageModel = CategoryPageModel()
-    @State var categoryName: String
     @Binding var titleName: String
     @State var openCard: Bool = false
-    @State var updateCell: Bool = false
-    
-    @State private var receivedValue: [Dish] = []
-    @State private var cancellables = Set<AnyCancellable>()
-    
-    @State var isTagClicked = [true, false, false, false]
     
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
-    
-    let tags: [Teg] = [.allMenu, .withRice, .withFish, .salads]
     
     var body: some View {
         ZStack(alignment: .topLeading) {
@@ -56,12 +46,13 @@ struct CategoryPage: View {
                 
                 LazyHStack(alignment: .center, spacing: 5) {
                     
-                    ForEach(isTagClicked.indices, id: \.self) { tag in
+                    ForEach(model.isTagClicked.indices, id: \.self) { tag in
                         
-                        TagButton(isClicked: $isTagClicked[tag], tagRawValue: tags[tag].rawValue, resetOtherButtons: {
-                            self.resetButtons(except: tag)
-                            self.model.filterDishes(tag: tags[tag].rawValue)
-                            self.updateCell.toggle()
+                        TagButton(isClicked: $model.isTagClicked[tag], tagRawValue: model.tags[tag].rawValue, resetOtherButtons: {
+                            
+                            self.model.resetButtons(except: tag)
+                            
+                            self.model.filterDishes(tag: model.tags[tag].rawValue)
                         })
                         
                     }
@@ -80,7 +71,7 @@ struct CategoryPage: View {
                     
                     ForEach(model.filterArray, id: \.self) { dish in
                         
-                        CategoryPageCell(dish: dish, sizeOfImage: dishCellSize, openCard: $openCard, updateCell: $updateCell, delegate: model)
+                        CategoryPageCell(dish: dish, sizeOfImage: dishCellSize, openCard: $openCard, delegate: model)
                         
                         
                     }
@@ -109,25 +100,10 @@ struct CategoryPage: View {
             
         }
         .onAppear {
-            DataStore.shared.value.send(model.sendShoppingBascet())
-            openCard = false
-            
-            DataRecieceStore.shared.recieveValue
-                .sink { recieveValue in
-                    self.receivedValue = recieveValue
-                    self.model.updateShopList(self.receivedValue)
-                }
-                .store(in: &cancellables)
-            
+            model.dataStroreSharedValue()
+            model.dataRecieceStoreRecieveValue()
             model.getCategoryDish()
         }
-        .onDisappear {
-            
-            openCard = false
-            
-            cancellables.removeAll()
-        }
-        
     }
     
     private var dishCellSize: CGFloat {
@@ -144,17 +120,11 @@ struct CategoryPage: View {
         
         return cellWidth
     }
-    private func resetButtons(except index: Int) {
-        for i in 0..<isTagClicked.count {
-            if i != index {
-                isTagClicked[i] = false
-            }
-        }
-    }
+
 }
 
 struct CategoryPage_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryPage(categoryName: "Категории", titleName: .constant("222"))
+        CategoryPage(titleName: .constant("Кухня времени"))
     }
 }
